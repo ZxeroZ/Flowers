@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap');
 *,
 *::after,
 *::before {
@@ -34,6 +35,17 @@ body {
 .flowers {
   position: relative;
   transform: scale(0.7);
+}
+
+.titulo{
+position: absolute;
+  z-index: 999;
+bottom: 75%;
+font-family: "Playwrite NL", cursive;
+background: linear-gradient(to right, #40bbab, #a7ffee);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
 }
 
 .flower {
@@ -983,4 +995,13 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 }
 .not-loaded * {
   animation-play-state: paused !important;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .titulo{
+    bottom: 55%;
+    text-align: center;
+    font-size: 15px;
+    }
 }
